@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +10,7 @@
     <!--<h1 class="text-2xl font-semibold text-yellow-400 mb-6" id="form-title">Finance at Freddy's</h1>-->
     <div class="bg-white p-8 rounded shadow-md w-96 bg-yellow-400">
         <h1 class="text-2xl font-semibold mb-6" id="form-title">Registro</h1>
-        <form id="auth-form" th:action="@{/login}" method="post">
-            <div th:if="${param.error}">Invalid username and password.</div>
-            <div th:if="${param.logout}">You have been logged out.</div>
+        <form id="auth-form">
             <div class="mb-4">
                 <label for="nombre" class="block text-gray-700 text-sm font-bold mb-2">Nombre</label>
                 <input type="text" id="nombre" name="nombre" class="border rounded w-full py-2 px-3" required>
@@ -29,7 +27,7 @@
                 <label for="confirmar-contrasena" class="block text-gray-700 text-sm font-bold mb-2">Confirmar contraseña</label>
                 <input type="password" id="confirmar-contrasena" name="confirmar-contrasena" class="border rounded w-full py-2 px-3" required>
             </div>
-            <button type="submit" value="Sign In" id="auth-button" class="bg-black text-white py-2 px-4 rounded hover:bg-gray-600 focus:outline-none focus:shadow-outline-blue active:bg-blue-800">
+            <button type="submit" id="auth-button" class="bg-black text-white py-2 px-4 rounded hover:bg-gray-600 focus:outline-none focus:shadow-outline-blue active:bg-blue-800">
                 Registrarse
             </button>
         </form>
@@ -55,7 +53,7 @@
 
             // Cambiar el texto del botón según la vista
             authButton.innerText = isLoginForm ? 'Registrarse' : 'Iniciar sesión';
-            toggleFormLink.innerText = isLoginForm ? 'Inicia sesion' : 'Registrate';
+            toggleFormLink.innerText = isLoginForm ? 'Regístrate' : 'Inicia sesión';
         });
     </script>
 </body>
