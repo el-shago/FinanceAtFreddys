@@ -1,4 +1,4 @@
-package Controllers;
+package edu.cetys.financeatfreddysserver.Controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,9 +18,9 @@ public class PrincipalController {
     }
 
     @GetMapping("/reportes")
-        public String reportesPage(){
-            return "/secure/reportes";
-        }
+    public String reportesPage() {
+        return "/secure/reportes";
+    }
 
     @PostMapping("/register")
     public String registerPage() {
@@ -31,5 +31,5 @@ public class PrincipalController {
     public String expensePage() {
         return "/secure/expense";
     }
-    
+
 }
