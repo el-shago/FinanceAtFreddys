@@ -19,7 +19,14 @@
     
     <!-- Contenido principal -->
     <div class="flex-1 flex justify-center items-center p-8">
-        <div class="max-w-md">
+        
+        <div class="max-w-md space-y-10">
+            <div class="flex justify-end space-x-4">
+                <button class="bg-yellow-400 text-white py-2 px-4 rounded hover:bg-yellow-500 focus:outline-none focus:shadow-outline-yellow active:bg-yellow-600">Gastos</button>
+                <button class="bg-yellow-400 text-white py-2 px-4 rounded hover:bg-yellow-500 focus:outline-none focus:shadow-outline-yellow active:bg-yellow-600">Presupuestos</button>
+                <button class="bg-yellow-400 text-white py-2 px-4 rounded hover:bg-yellow-500 focus:outline-none focus:shadow-outline-yellow active:bg-yellow-600">Reportes</button>
+            </div>
+            <div class="bg-yellow-400">
             <h1 class="text-3xl font-semibold mb-8">Crear Presupuesto</h1>
 
             <!-- Formulario de creación de presupuesto -->
@@ -41,11 +48,12 @@
                     <label for="gastoActual" class="block text-white text-sm font-bold mb-2">Gasto Actual</label>
                     <input type="number" id="gastoActual" name="gastoActual" class="border rounded w-full py-2 px-3" placeholder="Ingrese el gasto actual" required>
                 </div>
-                <button type="submit" class="bg-yellow-400 text-white py-2 px-4 rounded hover:bg-yellow-500 focus:outline-none focus:shadow-outline-blue active:bg-blue-800">
+                <button type="submit" class="bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-500 focus:outline-none focus:shadow-outline-blue active:bg-purple-500">
                     Crear Presupuesto
                 </button>
             </form>
         </div>
+    </div>
     </div>
 
     <!-- Barra lateral derecha -->
