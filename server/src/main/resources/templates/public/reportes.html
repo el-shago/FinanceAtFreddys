@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Generar Reporte</title>
+</head>
+<body class="font-sans bg-purple-600 flex flex-col h-screen">
+
+
+    <!-- Tres botones amarillos en la parte superior de la pantalla -->
+    
+
+    <div class="flex flex-col sm:flex-row flex-grow">
+        <!-- Barra lateral izquierda -->
+        <aside class="w-full sm:w-1/6 bg-yellow-400 text-white p-4 min-h-screen">
+            <h2 class="text-2xl font-semibold mb-4">Reportes</h2>
+            <ul>
+                <li>Reporte 1</li>
+                <li>Reporte 2</li>
+                <li>Reporte 3</li>
+                <li>Reporte 4</li>
+            </ul>
+        </aside>
+
+        <!-- Contenido principal centrado -->
+        <div class="flex-1 flex flex-col items-center justify-center p-8">
+            
+            <div class="max-w-md space-y-10">
+                <div class="flex justify-end space-x-4">
+                    <button class="bg-yellow-400 text-white py-2 px-4 rounded hover:bg-yellow-500 focus:outline-none focus:shadow-outline-yellow active:bg-yellow-600">Gastos</button>
+                    <button class="bg-yellow-400 text-white py-2 px-4 rounded hover:bg-yellow-500 focus:outline-none focus:shadow-outline-yellow active:bg-yellow-600">Presupuestos</button>
+                    <button class="bg-yellow-400 text-white py-2 px-4 rounded hover:bg-yellow-500 focus:outline-none focus:shadow-outline-yellow active:bg-yellow-600">Reportes</button>
+                </div>
+                <div class="bg-yellow-400">
+                <h1 class="text-3xl font-semibold mb-8">Generar Reporte</h1>
+
+                <!-- Espacio para mostrar el gasto total -->
+                <div class="mb-4">
+                    <label for="gastoTotal" class="block text-black text-sm font-bold mb-2">Gasto Total del Mes</label>
+                    <span id="gastoTotal" class="text-lg font-semibold">$$</span>
+                </div>
+
+                <!-- Espacio para mostrar los ingresos totales -->
+                <div class="mb-4">
+                    <label for="ingresosTotales" class="block text-black text-sm font-bold mb-2">Ingresos Totales del Mes</label>
+                    <span id="ingresosTotales" class="text-lg font-semibold">$$</span>
+                </div>
+
+                <!-- Checklist de categorías -->
+                <div class="mb-4">
+                    <label class="block text-black text-sm font-bold mb-2">Categorías Incluidas</label>
+                    <div class="flex flex-wrap">
+                        <label class="flex items-center space-x-2">
+                            <input type="checkbox" class="form-checkbox">
+                            <span>Casa</span>
+                        </label>
+                        <!-- Agregar más categorías según sea necesario -->
+                    </div>
+                </div>
+
+                <!-- Espacio para mostrar los ahorros totales -->
+                <div class="mb-4">
+                    <label for="ahorrosTotales" class="block text-black text-sm font-bold mb-2">Ahorros Totales del Mes</label>
+                    <span id="ahorrosTotales" class="text-lg font-semibold">$$</span>
+                </div>
+
+                <!-- Botón para generar el reporte -->
+                <button type="button" class="bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-500 focus:outline-none focus:shadow-outline-purple active:bg-purple-500">
+                    Generar Reporte
+                </button>
+            </div>
+        </div>
+    </div>
+         <!-- Barra lateral derecha -->
+    <aside class="w-1/6 bg-yellow-400 text-white p-4 min-h-screen">
+        <h2 class="text-2xl text-black font-semibold mb-4">Reportes</h2>
+        <!-- Aquí puedes mostrar la lista de reportes -->
+        <!-- Ejemplo: -->
+        <!-- <ul>
+            <li>reporte 1</li>
+            <li>reporte 2</li>
+            <li>reporte 3</li>
+        </ul> -->
+    </aside>
+        </html>
+
