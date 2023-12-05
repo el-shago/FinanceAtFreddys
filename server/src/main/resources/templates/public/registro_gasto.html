@@ -24,7 +24,7 @@
         }
     </script>
 </head>
-<body class="font-sans bg-purple-600 ">
+<body class="font-sans ">
     
 
 <!-- Tres botones amarillos en la parte superior de la pantalla -->
@@ -32,9 +32,9 @@
 <div class="flex">
     
     <!-- Barra lateral -->
-    <aside class="w-1/4 bg-yellow-400 text-white p-4 min-h-screen">
+    <aside class="w-1/4 bg-purple-500 text-white p-4 min-h-screen rounded-xl">
         <h2 class="text-2xl font-semibold mb-4">Gastos Recientes</h2>
-        <div id="contenedor" class="text-black bg-yellow-400 ">
+        <div id="contenedor" class="text-black bg-gray-100 ">
 
         </div>
             
@@ -52,16 +52,16 @@
         <!-- Formulario de registro de gastos -->
         <div class="flex justify-center items-center p-8">
             <div class="max-w-md space-y-10">
-                <div class="flex justify-end space-x-4">
-                    <button class="bg-yellow-400 text-white py-2 px-4 rounded hover:bg-yellow-500 focus:outline-none focus:shadow-outline-yellow active:bg-yellow-600">Gastos</button>
-                    <button class="bg-yellow-400 text-white py-2 px-4 rounded hover:bg-yellow-500 focus:outline-none focus:shadow-outline-yellow active:bg-yellow-600">Presupuestos</button>
-                    <button class="bg-yellow-400 text-white py-2 px-4 rounded hover:bg-yellow-500 focus:outline-none focus:shadow-outline-yellow active:bg-yellow-600">Reportes</button>
+                <div class="flex justify-center space-x-4">
+                    <button class="bg-purple-500 text-white py-2 px-4 rounded hover:bg-purple-400 focus:outline-none focus:shadow-outline-yellow active:bg-yellow-600">Gastos</button>
+                    <button class="bg-purple-500 text-white py-2 px-4 rounded hover:bg-purple-400 focus:outline-none focus:shadow-outline-yellow active:bg-yellow-600">Presupuestos</button>
+                    <button class="bg-purple-500 text-white py-2 px-4 rounded hover:bg-purple-400 focus:outline-none focus:shadow-outline-yellow active:bg-yellow-600">Reportes</button>
                 </div>
-                <div class="bg-yellow-400">
+                <div class="bg-gray-100 p-8 rounded-2xl">
                 <h1 class="text-3xl font-semibold mb-8">Registro de Gastos</h1>
             <div class="mb-4">
                 <label for="metodoPago" class="block text-black text-sm font-bold mb-2">Método de Pago</label>
-                <select id="metodoPago" name="metodoPago" class="border rounded w-full py-2 px-3">
+                <select id="metodoPago" name="metodoPago" class="border rounded-xl w-full py-2 px-3">
                     <option value="efectivo">Efectivo</option>
                     <option value="tarjeta">Tarjeta de Crédito</option>
                     <option value="transferencia">Transferencia Bancaria</option>
@@ -69,22 +69,22 @@
             </div>
             <div class="mb-4">
                 <label for="cantidad" class="block text-black text-sm font-bold mb-2">Cantidad del Gasto</label>
-                <input type="number" id="cantidad" name="cantidad" class="border rounded w-full py-2 px-3" placeholder="Ingrese la cantidad" required>
+                <input type="number" id="cantidad" name="cantidad" class="border rounded-xl w-full py-2 px-3" placeholder="Ingrese la cantidad" required>
             </div>
             <div class="mb-4">
                 <label class="block text-black text-sm font-bold mb-2">Categoría</label>
                 <div class="flex">
-                    <button type="button" class="flex-1 bg-white text-black py-2 px-4 rounded mr-2 hover:bg-gray-300">Casa</button>
-                    <button type="button" class="flex-1 bg-white text-black py-2 px-4 rounded mr-2 hover:bg-gray-300">Entretenimiento</button>
-                    <button type="button" class="flex-1 bg-white text-black py-2 px-4 rounded mr-2 hover:bg-gray-300">Comida</button>
-                    <button type="button" class="flex-1 bg-white text-black py-2 px-4 rounded hover:bg-gray-300">Carro</button>
+                    <button type="button" class="flex-1 bg-white text-black py-2 px-4 rounded-xl mr-2 hover:bg-gray-300">Casa</button>
+                    <button type="button" class="flex-1 bg-white text-black py-2 px-4 rounded-xl mr-2 hover:bg-gray-300">Entretenimiento</button>
+                    <button type="button" class="flex-1 bg-white text-black py-2 px-4 rounded-xl mr-2 hover:bg-gray-300">Comida</button>
+                    <button type="button" class="flex-1 bg-white text-black py-2 px-4 rounded-xl hover:bg-gray-300">Carro</button>
                 </div>
             </div>
             <div class="mb-4">
                 <label for="descripcion" class="block text-black text-sm font-bold mb-2">Descripción</label>
-                <textarea id="descripcion" name="descripcion" class="border rounded w-full py-2 px-3" placeholder="Ingrese una descripción"></textarea>
+                <textarea id="descripcion" name="descripcion" class="border rounded-xl w-full py-2 px-3" placeholder="Ingrese una descripción"></textarea>
             </div>
-            <button onclick="registrarGasto()" class="bg-purple-600 text-white py-2 px-4 rounded hover:bg-yellow-500 focus:outline-none focus:shadow-outline-blue active:bg-blue-800">
+            <button onclick="registrarGasto()" class="bg-purple-600 text-white py-2 px-4 rounded-xl hover:bg-purple-400 focus:outline-none focus:shadow-outline-blue active:bg-blue-800">
                 Registrar Gasto
             </button>
         </form>

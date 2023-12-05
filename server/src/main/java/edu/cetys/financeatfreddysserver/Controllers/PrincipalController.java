@@ -9,7 +9,7 @@ public class PrincipalController {
 
     @GetMapping("/")
     public String indexPage() {
-        return "/public/index";
+        return "templates/public/index";
     }
 
     @GetMapping("/login")
