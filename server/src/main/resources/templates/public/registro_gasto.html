@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <title>Registro de Gastos</title>
+    <script>
+        function registrarGasto(){
+            var nuevoGasto = document.createElement("div");
+    
+            //nuevoGasto.innerHTML = "<td>" + document.getElementById("metodoPago").value + "</td>" +
+            //"<td>" + document.getElementById("cantidad").value + "</td>" +
+            //"<td>" + document.getElementById("descripcion").value + "</td>";
+            nuevoGasto.innerHTML = "Nuevo Gasto";
+            nuevoGasto.style.padding = "10px";
+            nuevoGasto.style.marginTop = "10px";
+            nuevoGasto.style.border = "rounded";
+            nuevoGasto.classList.add("hover:bg-yellow-300");
+
+            var contenedor = document.getElementById("contenedor");
+    
+            contenedor.appendChild(nuevoGasto);
+        }
+    </script>
 </head>
 <body class="font-sans bg-purple-600 ">
     
@@ -16,6 +34,10 @@
     <!-- Barra lateral -->
     <aside class="w-1/4 bg-yellow-400 text-white p-4 min-h-screen">
         <h2 class="text-2xl font-semibold mb-4">Gastos Recientes</h2>
+        <div id="contenedor" class="text-black bg-yellow-400 ">
+
+        </div>
+            
         <!-- Aquí puedes mostrar la lista de gastos recientes -->
         <!-- Ejemplo: -->
         <!-- <ul>
@@ -62,7 +84,7 @@
                 <label for="descripcion" class="block text-black text-sm font-bold mb-2">Descripción</label>
                 <textarea id="descripcion" name="descripcion" class="border rounded w-full py-2 px-3" placeholder="Ingrese una descripción"></textarea>
             </div>
-            <button type="submit" class="bg-yellow-400 text-white py-2 px-4 rounded hover:bg-yellow-500 focus:outline-none focus:shadow-outline-blue active:bg-blue-800">
+            <button onclick="registrarGasto()" class="bg-purple-600 text-white py-2 px-4 rounded hover:bg-yellow-500 focus:outline-none focus:shadow-outline-blue active:bg-blue-800">
                 Registrar Gasto
             </button>
         </form>
@@ -75,4 +97,5 @@
 </div>
 
 </body>
+
 </html>
